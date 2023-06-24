@@ -1,4 +1,7 @@
-# Jfrog-Pipelines-Task
+# JFrog-Pipelines-Task
+`
+This is a template repository for creating JFrog Pipelines Task.
+`
 
 This JFrog pipelines task performs this action.
  
