@@ -6,3 +6,4 @@ repoPath:
 mainBranch: main
 protocol: https
 buildOnCommit: True
+publishOnCommit: False

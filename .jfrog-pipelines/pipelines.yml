@@ -22,7 +22,7 @@ pipelines:
           JFROG_TASK_DEBUG: "true"
           JFROG_CLI_LOG_LEVEL: debug
     steps:
-      - name: test_{{.Values.taskName }}
+      - name: test_{{ .Values.taskName }}
         type: Bash
         configuration:
           inputResources:
