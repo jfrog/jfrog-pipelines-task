@@ -55,14 +55,13 @@ pipelines:
                 taskName: $TASK_NAME
                 taskVersion: $TASK_VERSION
                 includePattern: ^README.md$|^dist
-
       - name: test_published_task
         type: Bash
         configuration:
           inputSteps:
             - name: build_and_publish_task
           integrations:
-            - name: {{ .Values.artIntegration }}
+            - name: {{ .Values.artifactory }}
         execution:
           onExecute:
             # Run task
@@ -70,7 +69,6 @@ pipelines:
               id: my-{{ .Values.taskName }}
               input:
                 name: "dev"
-
             # Run other commands after task
             - echo "my task done"
           onComplete:

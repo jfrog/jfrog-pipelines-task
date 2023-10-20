@@ -5,5 +5,6 @@ artifactory: int_default_artifactory # rename if the artifactory integration is 
 repoPath:
 mainBranch: main
 protocol: https
-buildOnCommit: True
-publishOnCommit: False
+buildOnCommit: true
+publishOnCommit: false
+pipelineName: 
